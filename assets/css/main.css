@@ -255,7 +255,7 @@ section {
 }
 
 .header.sticked {
-  background: rgba(27, 47, 69, 0.9);
+  background: rgba(27, 47, 69, 1);
   padding: 12px 0;
 }
 
@@ -510,6 +510,7 @@ section {
   position: relative;
   padding: 120px 0;
   z-index: 3;
+  height: 0;
 }
 
 @media (min-width: 1034px) {

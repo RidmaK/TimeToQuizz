@@ -69,6 +69,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a onclick="loginHandler()" style="cursor: pointer;" class="active" id="loginLabal">Login</a></li>
+          <li><a onclick="registerHandler()" style="cursor: pointer;display: none;" class="active" id="registerLabal">Sign Up</a></li>
           
         </ul>
       </nav><!-- .navbar -->
@@ -80,7 +81,7 @@
   <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col-xl-4" id="heroDetails">
+        <div class="col-xl-4 " style="margin-top: 100px;" id="heroDetails">
           <h2 data-aos="fade-up">Focus On What Matters</h2>
           <blockquote data-aos="fade-up" data-aos-delay="100">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
@@ -103,45 +104,21 @@
                   <div class="rounded-t mb-0 px-6 py-6">
                     <div class="text-center mb-3">
                       <h6 class="text-blueGray-500 text-sm font-bold">
-                        Sign in with
+                        Sign in
                       </h6>
-                    </div>
-                    <div class="btn-wrapper text-center">
-                      <button
-                        class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                        type="button"
-                      >
-                        <img
-                          alt="..."
-                          class="w-5 mr-1"
-                          src="assets/img/github.svg"
-                        />Github</button
-                      ><button
-                        class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                        type="button"
-                      >
-                        <img
-                          alt="..."
-                          class="w-5 mr-1"
-                          src="assets/img/google.svg"
-                        />Google
-                      </button>
                     </div>
                     <hr class="mt-6 border-b-1 border-blueGray-300" />
                   </div>
                   <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-                    <div class="text-blueGray-400 text-center mb-3 font-bold">
-                      <small>Or sign in with credentials</small>
-                    </div>
                     <form>
-                      <div class="relative w-full mb-3">
+                      <div class="relative w-full mb-1">
                         <label
                           class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                           for="grid-password"
                           >Email</label
                         ><input
                           type="email"
-                          class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                          class="border-0 px-2 py-2 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           placeholder="Email"
                         />
                       </div>
@@ -152,7 +129,7 @@
                           >Password</label
                         ><input
                           type="password"
-                          class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                          class="border-0 px-2 py-2 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           placeholder="Password"
                         />
                       </div>
@@ -177,6 +154,22 @@
                         </button>
                       </div>
                     </form>
+                    <div class="text-blueGray-400 text-center mb-1 font-bold">
+                      <small>Or sign in with</small>
+                    </div>
+                    
+                  <div class="btn-wrapper text-center mb-3">
+                    <button
+                      class="text-center bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 w-full uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
+                      type="button"
+                    >
+                      <img
+                        alt="..."
+                        class="w-5 mr-1 text-center"
+                        src="assets/img/google.svg"
+                      />Google
+                    </button>
+                  </div>
                   </div>
                 </div>
                 <div class="flex flex-wrap mt-6 relative">
@@ -197,43 +190,19 @@
             <!-- register section -->
             <section class="relative " id="registerSection" style="display: none;">
             <div class="flex content-center items-center justify-center h-full">
-              <div class="w-full lg:w-8/12 px-4" style="margin-top: -80px;">
+              <div class="w-full lg:w-8/12 px-4" style="margin-top: -60px;">
                 <div
-                  class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0"
+                class="relative flex flex-col min-w-0 break-words w-full shadow-lg rounded-lg bg-blueGray-200 border-0"
                 >
-                  <div class="rounded-t mb-0 px-6 py-6">
-                    <div class="text-center mb-3">
-                      <h6 class="text-blueGray-500 text-sm font-bold">
-                        Sign up with
-                      </h6>
-                    </div>
-                    <div class="btn-wrapper text-center">
-                      <button
-                        class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                        type="button"
-                      >
-                        <img
-                          alt="..."
-                          class="w-5 mr-1"
-                          src="assets/img/github.svg"
-                        />Github</button
-                      ><button
-                        class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                        type="button"
-                      >
-                        <img
-                          alt="..."
-                          class="w-5 mr-1"
-                          src="assets/img/google.svg"
-                        />Google
-                      </button>
-                    </div>
-                    <hr class="mt-6 border-b-1 border-blueGray-300" />
+                <div class="rounded-t mb-0 px-6 py-3">
+                  <div class="text-center mb-3">
+                    <h6 class="text-blueGray-500 text-sm font-bold">
+                      Sign up
+                    </h6>
                   </div>
-                  <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-                    <div class="text-blueGray-400 text-center mb-3 font-bold">
-                      <small>Or sign up with credentials</small>
-                    </div>
+                  <hr class="mt-6 border-b-1 border-blueGray-300" />
+                </div>
+                <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
                     <form>
                       <div class="relative w-full mb-3">
                         <label
@@ -242,7 +211,7 @@
                           >Name</label
                         ><input
                           type="email"
-                          class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                          class="border-0 px-2 py-2 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           placeholder="Name"
                         />
                       </div>
@@ -253,7 +222,7 @@
                           >Email</label
                         ><input
                           type="email"
-                          class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                          class="border-0 px-2 py-2 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           placeholder="Email"
                         />
                       </div>
@@ -264,7 +233,7 @@
                           >Password</label
                         ><input
                           type="password"
-                          class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                          class="border-0 px-2 py-2 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           placeholder="Password"
                         />
                       </div>
@@ -292,6 +261,29 @@
                         </button>
                       </div>
                     </form>
+                    
+                    <div class="text-blueGray-400 text-center mb-3 font-bold">
+                      <small>Or sign up with</small>
+                    </div>
+                    <div class="btn-wrapper text-center">
+                      <button
+                        class="bg-white text-center active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 w-full uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
+                        type="button"
+                      >
+                        <img
+                          alt="..."
+                          class="w-5 mr-1"
+                          src="assets/img/google.svg"
+                        />Google
+                      </button>
+                    </div>
+                    
+                    <div class="text-blueGray-400 text-center font-bold">
+                      <a style="cursor: pointer;" onclick="loginHandler()"
+                        >
+                        <small>Already have an account ?</small></a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -704,7 +696,9 @@
           $('#loginSection').hide();
           $('#loginSection').removeClass( "active" );
           $('#heroDetails').removeClass( "mobile-hide" );
-          $('#loginLabal').html( "Login" );
+          $('#loginLabal').show();
+          $('#registerLabal').hide();
+          $('.mobile-nav-hide').toggle('d-none');
         }else{
           $('#main').hide();
           $('#registerSection').hide();
@@ -713,7 +707,9 @@
           $('#loginSection').fadeIn('slow');
           $('#loginSection').addClass( "active" );
           $('#heroDetails').addClass( "mobile-hide" );
-          $('#loginLabal').html( "Sign In" );
+          $('#loginLabal').hide();
+          $('#registerLabal').show();
+          $('.mobile-nav-hide').toggle('d-none');
         }
         
       }
@@ -724,7 +720,8 @@
           $('.hero').hide();
           $('.footer').hide();
           $('#registerSection').fadeIn('slow');
-          $('#loginLabal').html( "Login" );
+          $('#loginLabal').show();
+          $('#registerLabal').hide();
           $('#loginSection').removeClass( "active" );
           $('#heroDetails').addClass( "mobile-hide" );
         
