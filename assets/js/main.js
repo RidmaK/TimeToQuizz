@@ -4,6 +4,67 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+function loginHandler(){
+  if($('#loginSection').hasClass("active")){
+    $('#main').show();
+    $('.hero').show();
+    $('.footer').show();
+    $('#loginSection').hide();
+    $('#loginSection').removeClass( "active" );
+    $('#heroDetails').removeClass( "mobile-hide" );
+    $('#loginLabal').show();
+    $('#registerLabal').hide();
+  }else{
+    $('#main').hide();
+    $('#registerSection').hide();
+    $('.hero').hide();
+    $('.footer').hide();
+    $('#loginSection').fadeIn('slow');
+    $('#loginSection').addClass( "active" );
+    $('#heroDetails').addClass( "mobile-hide" );
+    $('#loginLabal').hide();
+    $('#registerLabal').show();
+    if(!$('.mobile-nav-show').hasClass('d-hide')){
+      mobileNavToogle1();
+    }
+  }
+  
+}
+
+function getStartedHandler(){
+  $('#main').hide();
+  $('#registerSection').hide();
+  $('.hero').hide();
+  $('.footer').hide();
+  $('#loginSection').fadeIn('slow');
+  $('#loginSection').addClass( "active" );
+  $('#heroDetails').addClass( "mobile-hide" );
+  $('#loginLabal').hide();
+  $('#registerLabal').show();
+}
+
+function registerHandler(){
+    $('#main').hide();
+    $('#loginSection').hide();
+    $('.hero').hide();
+    $('.footer').hide();
+    $('#registerSection').fadeIn('slow');
+    $('#loginLabal').show();
+    $('#registerLabal').hide();
+    $('#loginSection').removeClass( "active" );
+    $('#heroDetails').addClass( "mobile-hide" );
+    if(!$('.mobile-nav-show').hasClass('d-hide')){
+      mobileNavToogle1();
+    }
+}
+
+  const mobileNavShow = document.querySelector('.mobile-nav-show');
+  const mobileNavHide = document.querySelector('.mobile-nav-hide');
+function mobileNavToogle1() {
+  document.querySelector('body').classList.toggle('mobile-nav-active');
+  mobileNavShow.classList.toggle('d-none');
+  mobileNavHide.classList.toggle('d-none');
+}
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 

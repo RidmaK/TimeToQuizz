@@ -93,7 +93,7 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" onclick="loginHandler()" class="btn-get-started">Get Started</a>
+            <a href="#about" onclick="getStartedHandler()" class="btn-get-started">Get Started</a>
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
 
@@ -694,44 +694,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-      function loginHandler(){
-        if($('#loginSection').hasClass("active")){
-          $('#main').show();
-          $('.hero').show();
-          $('.footer').show();
-          $('#loginSection').hide();
-          $('#loginSection').removeClass( "active" );
-          $('#heroDetails').removeClass( "mobile-hide" );
-          $('#loginLabal').show();
-          $('#registerLabal').hide();
-          $('.mobile-nav-hide').toggle('d-none');
-        }else{
-          $('#main').hide();
-          $('#registerSection').hide();
-          $('.hero').hide();
-          $('.footer').hide();
-          $('#loginSection').fadeIn('slow');
-          $('#loginSection').addClass( "active" );
-          $('#heroDetails').addClass( "mobile-hide" );
-          $('#loginLabal').hide();
-          $('#registerLabal').show();
-          $('.mobile-nav-hide').toggle('d-none');
-        }
-        
-      }
-
-      function registerHandler(){
-          $('#main').hide();
-          $('#loginSection').hide();
-          $('.hero').hide();
-          $('.footer').hide();
-          $('#registerSection').fadeIn('slow');
-          $('#loginLabal').show();
-          $('#registerLabal').hide();
-          $('#loginSection').removeClass( "active" );
-          $('#heroDetails').addClass( "mobile-hide" );
-        
-      }
+      
   </script>
 
 </body>
