@@ -57,6 +57,17 @@ function registerHandler(){
       mobileNavToogle1();
     }
 }
+function newRegisterHandler(){
+    $('#main').hide();
+    $('#loginSection').hide();
+    $('.hero').hide();
+    $('.footer').hide();
+    $('#registerSection').fadeIn('slow');
+    $('#loginLabal').show();
+    $('#registerLabal').hide();
+    $('#loginSection').removeClass( "active" );
+    $('#heroDetails').addClass( "mobile-hide" );
+}
 
   const mobileNavShow = document.querySelector('.mobile-nav-show');
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
